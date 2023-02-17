@@ -14,7 +14,7 @@ export const UserContextProvider = ({children}) => {
 
     const logout = () => {
         setUser(null);
-        navigate("/");
+        navigate("/login");
     }
 
     return <UserContext.Provider value={{user, login, logout}}>{children}</UserContext.Provider>
