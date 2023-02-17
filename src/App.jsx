@@ -7,6 +7,7 @@ import Monsters from "./pages/Monsters"
 import Header from './components/Header';
 import ProtectedRoute from './components/ProtectedRoute';
 import Equipment from "./pages/Equipment"
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             <Equipment/>
           </ProtectedRoute>}/>
         </Routes>
+        <Footer/>
     </div>
   ); 
 }
