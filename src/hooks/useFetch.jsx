@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const useFetch = (url) => {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
     
     useEffect(() => {
       axios.get(url)
       .then((res) => {
-        setData(res.data)
+        setData(res.data.data)
       })
     }, [url]);
 
