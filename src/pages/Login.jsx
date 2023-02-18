@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <main className="login">
       <img
-        src="https://www.seekpng.com/png/full/185-1858014_legend-of-zelda-breath-of-the-wild-png.png"
+        src="https://res.cloudinary.com/depifliz3/image/upload/v1676751056/samples/landscapes/185-1858014_legend-of-zelda-breath-of-the-wild-png_khuiwr.png"
         alt="fondo-zelda"
       />
       <input type="text" placeholder="Username" ref={inputRef} />

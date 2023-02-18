@@ -11,7 +11,7 @@ const Home = () => {
       <h1>Welcome to Hyrule, {user}.</h1>
       <figure>
         <img
-          src="https://www.pngmart.com/files/22/The-Legend-Of-Zelda-Breath-Of-The-Wild-PNG-Transparent-Image.png"
+          src="https://res.cloudinary.com/depifliz3/image/upload/v1676751093/samples/landscapes/The-Legend-Of-Zelda-Breath-Of-The-Wild-PNG-Transparent-Image_nsmmza.png"
           alt="image-link"
         />
         <p>
