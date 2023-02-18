@@ -26,17 +26,18 @@ const Monsters = () => {
   };
 
   return (
-    <main className='monsters'>
+    <main className="monsters">
       <input
         type="text"
+        placeholder='Search monster'
         onChange={(ev) => {
           filterFunction(ev.target.value);
         }}
       />
-      <div className='grid'>
-      {debounceValue.map((monster) => (
-        <ProjectCard key={monster.id} monster={monster} />
-      ))}
+      <div className="grid">
+        {debounceValue.map((monster) => (
+          <ProjectCard key={monster.id} monster={monster} />
+        ))}
       </div>
     </main>
   );
