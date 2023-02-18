@@ -11,9 +11,26 @@
 }
 
 button {
+  background-color: inherit;
+  border: none;
+  border: 1px solid #7f5af0;
+  border-radius: 5px;
+  transition: ease-in-out all 1s;
+}
+
+button:hover {
   background-color: #7f5af0;
 }
 
 main {
   height: 80vh;
+}
+
+nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active {
+  color: #7f5af0;
 }
