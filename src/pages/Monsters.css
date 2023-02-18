@@ -1,0 +1,12 @@
+.monsters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}

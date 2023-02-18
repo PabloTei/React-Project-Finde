@@ -1,3 +1,5 @@
+import './Monsters.css';
+
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
@@ -24,16 +26,18 @@ const Monsters = () => {
   };
 
   return (
-    <main>
+    <main className='monsters'>
       <input
         type="text"
         onChange={(ev) => {
           filterFunction(ev.target.value);
         }}
       />
+      <div className='grid'>
       {debounceValue.map((monster) => (
         <ProjectCard key={monster.id} monster={monster} />
       ))}
+      </div>
     </main>
   );
 };

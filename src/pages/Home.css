@@ -1,9 +1,26 @@
 .home {
-  display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
 
 .home > figure {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem;
+}
+
+.home > figure > p {
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: justify;
+  font-style: italic;
+}
+
+.home > h1 {
+  font-size: 50px;
+  color: #7f5af0;
 }
