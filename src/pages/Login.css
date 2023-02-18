@@ -4,24 +4,21 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
+  background-image: url("https://www.seekpng.com/png/full/185-1858014_legend-of-zelda-breath-of-the-wild-png.png");
+  background-repeat: no-repeat;
 }
 
 .login > button {
-    padding: 1rem 2.5rem;
-    font-size: 17px;
-   
+  padding: 1rem 2.5rem;
+  font-size: 17px;
 }
 
 .login > input {
-    padding: 1rem 4rem;
-    border: none;
-    border-bottom: 1px solid #7f5af0;
-    outline: none;
-    text-align: center;
-    font-size: 30px;
+  padding: 1rem 4rem;
+  border: none;
+  border-bottom: 1px solid #7f5af0;
+  outline: none;
+  text-align: center;
+  font-size: 30px;
+  background-color: transparent;
 }
-
-
-
-
