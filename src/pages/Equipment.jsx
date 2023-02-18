@@ -30,6 +30,7 @@ const Equipment = () => {
         <button onClick={() => filterEquipment('axe')}>Axes</button>
         <button onClick={() => filterEquipment('club')}>Clubs</button>
         <button onClick={() => filterEquipment('spear')}>Spears</button>
+        <button onClick={() => filterEquipment('bow')}>Bows</button>
         <button onClick={() => filterEquipment('shield')}>Shields</button>
         <button onClick={() => filterEquipment('')}>All</button>
       </div>
