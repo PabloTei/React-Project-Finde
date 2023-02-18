@@ -49,10 +49,3 @@ const Monsters = () => {
 };
 
 export default Monsters;
-
-/*{debounceValue !== [""] ? (
-  debounceValue.map((monster) =>
-  <ProjectCard key={monster.id} monster={monster} />)
-) : (
-  <Loading/>
-)}*/
