@@ -8,7 +8,7 @@ const Login = () => {
   const inputRef = useRef(null);
   const { login } = useContext(UserContext);
   return (
-    <main className='login'>
+    <main className="login">
       <input type="text" placeholder="Introduce tu nombre" ref={inputRef} />
       <button onClick={() => login(inputRef.current.value)}>Login</button>
     </main>
@@ -16,3 +16,5 @@ const Login = () => {
 };
 
 export default Login;
+
+
