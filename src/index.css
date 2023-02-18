@@ -7,7 +7,11 @@
   color: inherit;
   font-family: Helvetica, sans-serif;
   background-color: #16161a;
-  color: #fffffe
+  color: #fffffe;
+}
+
+button {
+  background-color: #7f5af0;
 }
 
 main {

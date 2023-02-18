@@ -7,4 +7,19 @@
   
 }
 
+.login > button {
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+
+.login > input {
+    padding: 1rem 4rem;
+    border: none;
+    border-bottom: 1px solid #7f5af0;
+    outline: none;
+    text-align: center;
+}
+
+
+
 
