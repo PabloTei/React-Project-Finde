@@ -1,3 +1,5 @@
+import './Header.css';
+
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -18,8 +20,8 @@ const Header = () => {
           <li>{user && <NavLink to="/monsters">Monsters</NavLink>}</li>
           <li>{user && <NavLink to="/equipment">Equipment</NavLink>}</li>
         </ul>
-        {user && <button onClick={() => logout()}>Logout</button>}
       </nav>
+      {user && <button onClick={() => logout()}>Logout</button>}
     </header>
   );
 };

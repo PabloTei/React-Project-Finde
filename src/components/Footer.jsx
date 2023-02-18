@@ -1,8 +1,10 @@
+import './Footer.css';
+
 const Footer = () => {
   return (
-    <div>
-      <h3>Powered by Pablo Teijeiro</h3>
-    </div>
+    <footer>
+      <h3>Powered by Pablo Teijeiro🚀</h3>
+    </footer>
   );
 };
 

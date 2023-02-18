@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  height: 10vh;
+  padding: 1.5rem;
+}
+header > nav {
+  display: flex;
+  align-items: center;
+}
+header > nav > ul {
+  display: flex;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+header > button {
+  gap: 2rem;
+  margin-right: 1rem;
+}
