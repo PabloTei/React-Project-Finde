@@ -29,7 +29,7 @@ const Monsters = () => {
     <main className="monsters">
       <input
         type="text"
-        placeholder='Search monster'
+        placeholder="Search monster"
         onChange={(ev) => {
           filterFunction(ev.target.value);
         }}
