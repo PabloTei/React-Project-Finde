@@ -8,6 +8,7 @@ footer {
   bottom: 0;
   background-color: transparent;
   backdrop-filter: blur(5px);
+  padding-bottom: 1rem;
 }
 
 footer > h3 {
