@@ -1,0 +1,10 @@
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.notfound > h1 {
+  color: #7f5af0;
+}

@@ -9,6 +9,7 @@ import Equipment from './pages/Equipment';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Monsters from './pages/Monsters';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
