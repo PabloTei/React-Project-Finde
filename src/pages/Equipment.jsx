@@ -30,6 +30,7 @@ const Equipment = () => {
       <button onClick={() => filterEquipment('club')}>Club</button>
       <button onClick={() => filterEquipment('spear')}>Spears</button>
       <button onClick={() => filterEquipment('shield')}>Shields</button>
+      <button onClick={() => filterEquipment('')}>All</button>
       {filter.map((monster) => (
         <ProjectCard key={monster.id} monster={monster} />
       ))}

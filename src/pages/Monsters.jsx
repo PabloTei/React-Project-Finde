@@ -1,13 +1,13 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import useDebounce from '../hooks/useDebounce';
 
 import ProjectCard from '../components/ProjectCard';
+import useDebounce from '../hooks/useDebounce';
 
 const Monsters = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState([]);
-  const debounceValue = useDebounce(filter, 1000)
+  const debounceValue = useDebounce(filter, 1000);
 
   useEffect(() => {
     axios
