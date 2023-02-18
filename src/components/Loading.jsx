@@ -1,7 +1,7 @@
 import './Loading.css';
 
 const Loading = () => {
-  return <span className="loader">Loading</span>;
+  return <div className="loader">Loading</div>;
 };
 
 export default Loading;

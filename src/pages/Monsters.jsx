@@ -3,6 +3,7 @@ import './Monsters.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+import Loading from '../components/Loading';
 import ProjectCard from '../components/ProjectCard';
 import useDebounce from '../hooks/useDebounce';
 
@@ -35,12 +36,23 @@ const Monsters = () => {
         }}
       />
       <div className="grid">
-        {debounceValue.map((monster) => (
-          <ProjectCard key={monster.id} monster={monster} />
-        ))}
+        {filter !== [] ? (
+          debounceValue.map((monster) => (
+            <ProjectCard key={monster.id} monster={monster} />
+          ))
+        ) : (
+          <Loading />
+        )}
       </div>
     </main>
   );
 };
 
 export default Monsters;
+
+/*{debounceValue !== [""] ? (
+  debounceValue.map((monster) =>
+  <ProjectCard key={monster.id} monster={monster} />)
+) : (
+  <Loading/>
+)}*/

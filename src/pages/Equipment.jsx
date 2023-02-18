@@ -3,6 +3,7 @@ import './Equipment.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+import Loading from '../components/Loading';
 import ProjectCard from '../components/ProjectCard';
 
 const Equipment = () => {
@@ -35,9 +36,11 @@ const Equipment = () => {
         <button onClick={() => filterEquipment('')}>All</button>
       </div>
       <div className="grid-equipment">
-        {filter.map((monster) => (
-          <ProjectCard key={monster.id} monster={monster} />
-        ))}
+        {filter !== [] ? (
+          filter.map((monster) => <ProjectCard key={monster.id} monster={monster} />)
+        ) : (
+          <Loading />
+        )}
       </div>
     </main>
   );
