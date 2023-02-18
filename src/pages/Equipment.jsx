@@ -1,3 +1,5 @@
+import './Equipment.css';
+
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
@@ -17,23 +19,25 @@ const Equipment = () => {
   }, []);
 
   const filterEquipment = (value) => {
-    const type = data.filter(
-      (object) => object.name.includes(value) || object.description.includes(value),
-    );
+    const type = data.filter((object) => object.name.includes(value));
     setFilter(type);
   };
 
   return (
-    <main>
-      <button onClick={() => filterEquipment('sword')}>Swords</button>
-      <button onClick={() => filterEquipment('axe')}>Axes</button>
-      <button onClick={() => filterEquipment('club')}>Club</button>
-      <button onClick={() => filterEquipment('spear')}>Spears</button>
-      <button onClick={() => filterEquipment('shield')}>Shields</button>
-      <button onClick={() => filterEquipment('')}>All</button>
-      {filter.map((monster) => (
-        <ProjectCard key={monster.id} monster={monster} />
-      ))}
+    <main className="equipment">
+      <div className="buttons-equipment">
+        <button onClick={() => filterEquipment('sword')}>Swords</button>
+        <button onClick={() => filterEquipment('axe')}>Axes</button>
+        <button onClick={() => filterEquipment('club')}>Clubs</button>
+        <button onClick={() => filterEquipment('spear')}>Spears</button>
+        <button onClick={() => filterEquipment('shield')}>Shields</button>
+        <button onClick={() => filterEquipment('')}>All</button>
+      </div>
+      <div className="grid-equipment">
+        {filter.map((monster) => (
+          <ProjectCard key={monster.id} monster={monster} />
+        ))}
+      </div>
     </main>
   );
 };
