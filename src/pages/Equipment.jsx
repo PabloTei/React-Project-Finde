@@ -28,6 +28,12 @@ const Equipment = () => {
 
   return (
     <main className="equipment">
+      <audio autoPlay={true} className="audio">
+        <source
+          src="https://res.cloudinary.com/depifliz3/video/upload/v1676844684/samples/landscapes/botw_item_sound_foc7yd.mp3"
+          type="audio/mp3"
+        ></source>
+      </audio>
       <div className="buttons-equipment">
         <button onClick={() => filterEquipment('sword')}>Swords</button>
         <button onClick={() => filterEquipment('axe')}>Axes</button>

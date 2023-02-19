@@ -30,6 +30,12 @@ const Monsters = () => {
 
   return (
     <main className="monsters">
+      <audio autoPlay={true} className="audio">
+        <source
+          src="https://res.cloudinary.com/depifliz3/video/upload/v1676844904/samples/landscapes/navi_hey_listen_k9rftq.mp3"
+          type="audio/mp3"
+        ></source>
+      </audio>
       <input
         type="text"
         placeholder="Search monster"

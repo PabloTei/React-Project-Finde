@@ -8,6 +8,12 @@ const Home = () => {
   const { user } = useContext(UserContext);
   return (
     <main className="home">
+      <audio autoPlay={true} className="audio">
+        <source
+          src="https://res.cloudinary.com/depifliz3/video/upload/v1676842935/samples/landscapes/ocarinaoftime_uh7wzw.mp3"
+          type="audio/mp3"
+        ></source>
+      </audio>
       {user == '' || user == null ? (
         <h1>¡Welcome to Hyrule!</h1>
       ) : (
