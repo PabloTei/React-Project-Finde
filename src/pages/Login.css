@@ -31,4 +31,8 @@
   .login > img {
     max-width: 20rem;
   }
+  .login > input {
+    padding: 1rem 1rem;
+    width: 20rem;
+  }
 }

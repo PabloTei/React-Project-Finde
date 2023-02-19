@@ -18,9 +18,35 @@
   font-weight: lighter;
   text-align: justify;
   font-style: italic;
+  margin-bottom: 2rem;
 }
 
 .home > h1 {
   font-size: 50px;
   color: #7f5af0;
+}
+
+@media screen and (max-width: 900px) {
+  .home > figure {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .home > figure > img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home > figure > p {
+    min-width: 20rem;
+  }
+  .home > figure > img {
+    width: 20rem;
+  }
+
+  .home > figure {
+    margin-top: 4rem;
+  }
 }

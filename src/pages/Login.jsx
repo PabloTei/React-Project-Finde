@@ -5,7 +5,6 @@ import { useContext, useRef } from 'react';
 import { UserContext } from '../context/userContext';
 
 const Login = () => {
-  const { user } = useContext(UserContext);
   const inputRef = useRef(null);
   const { login } = useContext(UserContext);
   return (
