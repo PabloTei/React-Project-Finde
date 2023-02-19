@@ -24,6 +24,8 @@
 .home > h1 {
   font-size: 50px;
   color: #7f5af0;
+  font-style: italic;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {

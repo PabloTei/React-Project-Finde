@@ -40,3 +40,23 @@ header > div > img {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 680px) {
+  header > nav > ul {
+    font-size: 15px;
+  }
+  header > div > img {
+    width: 30px;
+    height: 30px;
+  }
+  header > button {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header > div > img {
+    width: 0px;
+    height: 0px;
+  }
+}
