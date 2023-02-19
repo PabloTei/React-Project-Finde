@@ -13,7 +13,6 @@ const Login = () => {
   const handleChange = (ev) => {
     setMessage(ev.target.value);
   };
-  console.log(message);
 
   return (
     <main className="login">
