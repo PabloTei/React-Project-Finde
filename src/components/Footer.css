@@ -15,3 +15,9 @@ footer > h3 {
   width: auto;
   background-color: inherit;
 }
+
+@media screen and (max-width: 540px) {
+  footer > h3 {
+    font-size: 0;
+  }
+}
