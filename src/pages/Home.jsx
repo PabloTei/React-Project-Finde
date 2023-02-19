@@ -8,7 +8,11 @@ const Home = () => {
   const { user } = useContext(UserContext);
   return (
     <main className="home">
-      <h1>Welcome to Hyrule, {user}.</h1>
+      {user == '' || user == null ? (
+        <h1>¡Welcome to Hyrule!</h1>
+      ) : (
+        <h1>¡Welcome to Hyrule, {user}!</h1>
+      )}
       <figure>
         <img
           src="https://res.cloudinary.com/depifliz3/image/upload/v1676751093/samples/landscapes/The-Legend-Of-Zelda-Breath-Of-The-Wild-PNG-Transparent-Image_nsmmza.png"
