@@ -7,6 +7,7 @@ import { UserContext } from '../context/userContext';
 const Login = () => {
   const inputRef = useRef(null);
   const { login } = useContext(UserContext);
+
   return (
     <main className="login">
       <img
