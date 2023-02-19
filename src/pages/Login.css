@@ -26,3 +26,9 @@
   background-repeat: no-repeat;
   max-width: 30rem;
 }
+
+@media screen and (max-width: 550px) {
+  .login > img {
+    max-width: 20rem;
+  }
+}

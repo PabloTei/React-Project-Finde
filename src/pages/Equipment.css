@@ -34,7 +34,7 @@
 }
 
 .grid-equipment > figure > img {
-  border-radius: 20px;
+  border-radius: 10px;
   height: 250px;
 }
 
@@ -61,4 +61,7 @@
 
 .grid-equipment > figure > p {
   background-color: transparent;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 15px;
 }

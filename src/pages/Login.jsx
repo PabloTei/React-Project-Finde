@@ -5,12 +5,13 @@ import { useContext, useRef } from 'react';
 import { UserContext } from '../context/userContext';
 
 const Login = () => {
+  const { user } = useContext(UserContext);
   const inputRef = useRef(null);
   const { login } = useContext(UserContext);
   return (
     <main className="login">
       <img
-        src="https://res.cloudinary.com/depifliz3/image/upload/v1676751056/samples/landscapes/185-1858014_legend-of-zelda-breath-of-the-wild-png_khuiwr.png"
+        src="https://www.seekpng.com/png/full/185-1858014_legend-of-zelda-breath-of-the-wild-png.png"
         alt="fondo-zelda"
       />
       <input type="text" placeholder="Username" ref={inputRef} />
