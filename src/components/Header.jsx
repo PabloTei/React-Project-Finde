@@ -9,7 +9,7 @@ const Header = () => {
   const { user, logout } = useContext(UserContext);
   return (
     <header>
-      <div>
+      <div className="img-logo">
         {user ? (
           <img
             src="https://res.cloudinary.com/depifliz3/image/upload/v1676753350/samples/landscapes/1176_t25kbz.png"
