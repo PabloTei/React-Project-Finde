@@ -9,12 +9,12 @@ export const UserContextProvider = ({ children }) => {
 
   const login = (data) => {
     setUser(data);
-    navigate('/');
+    navigate('/home');
   };
 
   const logout = () => {
     setUser(null);
-    navigate('/login');
+    navigate('/');
   };
 
   return (

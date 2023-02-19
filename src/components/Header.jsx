@@ -22,9 +22,9 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/home">Home</NavLink>
           </li>
-          <li>{!user && <NavLink to="/login">Login</NavLink>}</li>
+          <li>{!user && <NavLink to="/">Login</NavLink>}</li>
           <li>{user && <NavLink to="/monsters">Monsters</NavLink>}</li>
           <li>{user && <NavLink to="/equipment">Equipment</NavLink>}</li>
         </ul>
