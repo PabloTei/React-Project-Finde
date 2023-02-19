@@ -3,6 +3,7 @@ const ProjectCard = ({ monster }) => {
     <figure>
       <img src={monster.image} alt={monster.name} />
       <h2>{monster.name.toUpperCase()}</h2>
+      <p>{monster.description}</p>
     </figure>
   );
 };

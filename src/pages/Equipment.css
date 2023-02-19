@@ -58,3 +58,7 @@
   font-size: 17px;
   padding: 0.5rem 2.5rem;
 }
+
+.grid-equipment > figure > p {
+  background-color: transparent;
+}
