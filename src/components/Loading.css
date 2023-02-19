@@ -1,7 +1,10 @@
 .loader {
-  position: relative;
   font-size: 48px;
   letter-spacing: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .loader:before {
   content: 'Loading';

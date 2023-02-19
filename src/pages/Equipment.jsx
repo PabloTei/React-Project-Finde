@@ -9,6 +9,7 @@ import ProjectCard from '../components/ProjectCard';
 const Equipment = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     axios
@@ -16,6 +17,7 @@ const Equipment = () => {
       .then((res) => {
         setData(res.data.data);
         setFilter(res.data.data);
+        setLoaded(true);
       });
   }, []);
 
@@ -36,7 +38,7 @@ const Equipment = () => {
         <button onClick={() => filterEquipment('')}>All</button>
       </div>
       <div className="grid-equipment">
-        {filter !== [] ? (
+        {loaded ? (
           filter.map((monster) => <ProjectCard key={monster.id} monster={monster} />)
         ) : (
           <Loading />

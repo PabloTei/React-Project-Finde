@@ -11,6 +11,7 @@ const Monsters = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState([]);
   const debounceValue = useDebounce(filter, 1000);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     axios
@@ -18,6 +19,7 @@ const Monsters = () => {
       .then((res) => {
         setData(res.data.data);
         setFilter(res.data.data);
+        setLoaded(true);
       });
   }, []);
 
@@ -36,7 +38,7 @@ const Monsters = () => {
         }}
       />
       <div className="grid">
-        {filter !== [] ? (
+        {loaded ? (
           debounceValue.map((monster) => (
             <ProjectCard key={monster.id} monster={monster} />
           ))
