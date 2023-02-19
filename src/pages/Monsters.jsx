@@ -32,7 +32,7 @@ const Monsters = () => {
         type="text"
         placeholder="Search monster"
         onChange={(ev) => {
-          filterFunction(ev.target.value);
+          filterFunction(ev.target.value.toLowerCase());
         }}
       />
       <div className="grid">
